@@ -142,6 +142,9 @@
         <div class="row footer">
           <div class="col s12">
             <hr /><br />
+            <div id='ww-widget-wwrated-2013' class="center-align">
+              <a class="ww-top" target="_blank" title="Weddings, Wedding, Wedding Venues" href="https://www.weddingwire.com"></a><a class="ww-bottom" target="_blank" title="Color Room Films Reviews, Southern New Jersey  Videography" href="https://www.weddingwire.com/reviews/color-room-films-jackson/fd77ea76d63e4a5f.html"></a>
+            </div>
             <h4 class="center-align">
               <a href="https://www.facebook.com/colorroomfilms/"><i class="icon-facebook"></i></a> <a href="https://twitter.com/colorroomfilms"><i class="icon-twitter"></i></a> <a href="https://plus.google.com/106778430374036459605"><i class="icon-google-plus"></i></a> <a href="https://www.youtube.com/channel/UCeeC4ieZCDdZzxIYZeGgHKQ"><i class="icon-youtube"></i></a> <a href="http://www.weddingwire.com/reviews/color-room-films-jackson/fd77ea76d63e4a5f.html"><i class="icon-weddingwire"></i></a> <a href="http://www.yourjerseyshorewedding.com/"><i class="icon-yjsw"></i></a>
             </h4>
@@ -164,6 +167,8 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
 
+    <script src='//www.weddingwire.com/assets/vendor/widgets/ww-rated-2013-d545585beb7833eec3a4dc56cbb3224c.js' type='application/javascript'></script>
+
     <script type="text/javascript">
 
       $(document).ready(function() {
@@ -183,6 +188,28 @@
       $(document).ready(function(){
         $('.parallax').parallax();
       });
+
+      // Creates Wedding Wire Review Button
+
+      WeddingWire.ensureInit(function() {
+
+        WeddingWire.createWWRated2013({
+
+          "vendorId":"fd77ea76d63e4a5f"
+
+        });
+
+      });
+
+      // Google Analytics
+
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-71617672-1', 'auto');
+        ga('send', 'pageview');
 
     </script>
 

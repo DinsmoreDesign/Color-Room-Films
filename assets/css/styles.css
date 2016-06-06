@@ -113,6 +113,44 @@ p {
 	}
 }
 
+/**** Wedding Wire Reviews CSS ****/
+
+	.ww-reviews-widget {
+		min-width: 100% !important;
+	    border: none !important;
+	    color: #777 !important;
+	}
+
+		.ww-reviews-widget a {
+		    color: #26a69a !important;
+		}
+
+		.ww-reviews-widget a:hover {
+			color: #26a69a !important;
+			opacity: 0.6 !important;
+		}
+
+	.ww-reviews-header-box {
+	    border-top: 1px solid #DDD !important;
+	   	border-bottom: none !important;
+	    border-right: 1px solid #DDD !important;
+	    border-left: 1px solid #DDD !important;
+	    padding: 15px !important;
+	}
+
+	.ww-reviews-box {
+		background-color: #e9f6f5 !important;
+	}
+
+	.ww-top:hover, .ww-bottom:hover {
+		opacity: 1 !important;
+	}
+
+	.review-button {
+		margin-top: 10px;
+		width: 100%;
+	}
+
 /**** Form CSS ****/
 
 	/*-----error/success messages-----*/
