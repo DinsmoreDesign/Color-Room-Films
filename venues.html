@@ -48,8 +48,10 @@
         <nav>
           <div class="container">
             <div class="nav-wrapper">
-              <a href="index.html" class="brand-logo thin">Color Room Films</a>
-              <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+              <a href="index.html" class="brand-logo thin">
+                <img src="assets/img/logo.svg" alt="Color Room Films Logo" class="responsive-img" style="height: 50px; padding-top: 10px; padding-right: 10px;">
+              </a>
+              <a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons">menu</i></a>
               <ul class="right hide-on-med-and-down">
                 <li>
                   <a href="index.html">Home</a>
@@ -219,7 +221,12 @@
 
       $(document).ready(function() {
 
-        $(".button-collapse").sideNav();
+        $(".button-collapse").sideNav({
+
+          edge: 'right',
+          closeOnClick: true
+
+        });
 
       })
 
