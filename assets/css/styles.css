@@ -143,7 +143,17 @@ p {
 	}
 
 	.ww-top:hover, .ww-bottom:hover {
-		opacity: 1 !important;
+		opacity: 0.4 !important;
+	}
+
+	.ww-top, .ww-bottom {
+			-webkit-filter: grayscale(1);
+			-webkit-filter: grayscale(100%);
+		filter: gray;
+		filter: grayscale(100%);
+		filter: url(desaturate.svg#greyscale);
+		opacity: 0.4;
+		color: #000 !important;
 	}
 
 	.review-button {
