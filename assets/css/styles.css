@@ -60,6 +60,23 @@ p {
 	height: 600px;
 }
 
+.textbox {
+	background-color: rgba(255,255,255,0.4);
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+	.textbox h1, .textbox p {
+		color: #000;
+	}
+
+.cta {
+	width: 100%;
+	border-radius: 0;
+	height: auto;
+}
+
 .padbox {
 	margin-top: 60px;
 	margin-bottom: 60px;
@@ -80,6 +97,7 @@ p {
 
 .clients a:hover {
 	opacity: 1;
+	cursor: pointer;
 }
 
 @media (max-width: 992px) {
@@ -146,7 +164,7 @@ p {
 		opacity: 0.4 !important;
 	}
 
-	.ww-top, .ww-bottom {
+	.ww-top, .ww-bottom, {
 			-webkit-filter: grayscale(1);
 			-webkit-filter: grayscale(100%);
 		filter: gray;
