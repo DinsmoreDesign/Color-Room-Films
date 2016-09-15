@@ -49,6 +49,10 @@ p {
 	color: #26a69a;
 }
 
+.gray {
+	color: #777;
+}
+
 .slider .slides h4 {
 	color: #26a69a;
 }
@@ -162,7 +166,7 @@ p {
 	padding: 0;
 }
 
-	.featured-vid .video-container, .featured-vid-sm .video-container {
+	.modal-content .video-container, .featured-vid .video-container, .featured-vid-sm .video-container {
 		margin-bottom: 0;
 	}
 
