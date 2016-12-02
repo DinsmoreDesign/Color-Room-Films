@@ -81,10 +81,13 @@ $msg='You have been contacted by '.$_POST['name'].'<br /><br />
 <td>Email:</td><td>'.$_POST['email'].'</td>
 </tr>
 <tr>
-<td>Subject</td><td>'.$_POST['company'].'</td>
+<td>Subject</td><td>'.$_POST['subject'].'</td>
 </tr>
 <tr>
 <td>Phone</td><td>'.$_POST['phone'].'</td>
+</tr>
+<tr>
+<td>Wedding Date</td><td>'.$_POST['date'].'</td>
 </tr>
 <tr>
 <td>Message</td><td>'.$_POST['message'].'</td>
@@ -103,7 +106,7 @@ $mail->IsMail();
 $mail->AddReplyTo($_POST['email'], $_POST['name']);
 $mail->AddAddress($email);
 $mail->SetFrom($_POST['email'], $_POST['name']);
-$mail->Subject = "New Inquiry: ".$_POST['company']."";
+$mail->Subject = "New Inquiry: ".$_POST['subject']."";
 $mail->MsgHTML($msg);
 $mail->Send();
 }
